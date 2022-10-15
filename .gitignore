@@ -1,0 +1,6 @@
+venv/
+start.sh
+.env
+*.pyc
+__pycache__/
+instance/

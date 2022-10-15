@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% block head %}
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="Hella useless task manager">
+        <meta name="author" content="Siengrain">
+        <title>To-2-List</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='style.css') }}">
+</head>
+{% endblock %}
+{% block navbar %}
+<nav>
+        <ul class="ul">
+		<li><a href="{{ url_for('auth.register') }}">Sign Up</a></li>
+	        <li><a href="{{ url_for('auth.login') }}">Log In</a></li>
+	</ul>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="contentArea">
+	<div class="border">
+		<h1 class="indtex maintext">{% block title %}To-2-List{% endblock %}</h1>
+		<h3 class="subtex maintext">A really simple and fun task manager!</h3>
+	</div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+

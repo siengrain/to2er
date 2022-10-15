@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='style.css') }}">
+</head>
+<h4 class="htit">{% block title %}New To-do{% endblock %}</h4>
+{% endblock %}
+
+{% block content %}
+<div class="regbox">
+	<form method="post">
+		<label class="sublabel" for="description">Description:</label>
+		<div class="sublabel">
+			<input name="description" maxlength="50" id="description" required>
+		</div>
+		<br />
+		<a class="action sp" href="{{ url_for('todo.home') }}">Back</a>
+		<div class="sub">
+			<input type="submit" value="Save">
+                <br />
+		</div>
+	</form>
+</div>
+{% endblock %}

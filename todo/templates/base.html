@@ -1,0 +1,32 @@
+<!doctype html>
+{% block head %}
+<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Hella useless task manager">
+        <meta name="author" content="Siengrain">
+        <title>To-2-List</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+{% endblock %}
+<title>{%block title %}{% endblock %} - To2 List</title>
+<nav>
+	<ul class="ul">
+		{%if g.user %}
+			<li class="lli"><span>{{ g.user['username'] }}</span></li>
+			<li><a href="{{ url_for('todo.logout') }}">Logout</a></li>
+		{% else %}
+			<li><a href="{{ url_for('auth.register') }}">Sign Up</a></li>
+			<li><a href="{{ url_for('auth.login') }}">Log In</a></li>
+		{% endif %}
+	</ul>
+</nav>
+<section class="content">
+	<header>
+		{% block header %}{% endblock %}
+	</header>
+	{% for message in get_flashed_messages() %}
+	<div class="flash"><{{ message }}</div>
+	{% endfor %}
+	{% block content %}{% endblock %}
+</section>

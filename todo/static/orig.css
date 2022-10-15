@@ -1,0 +1,206 @@
+nav {
+	background-color: rgb(13, 166, 246);
+}
+
+body {
+	background-color: rgba(4, 27, 65, 1);
+}
+
+.maintext {
+	font-family: "Lucida Console", monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+	align-text: center;
+	color: white;
+}
+
+#indtex {
+	font-size: 100px;
+	align-text: center;
+	color: rgba(251, 253, 255, 0.95);
+}
+
+#subtex {
+	font-size: 25px;
+	color: rgba(224, 230, 239, 0.79);
+}	
+
+#contentArea {
+	position: absolute;
+	top: 30%;
+	left: 30%;
+}
+
+#border {
+	border-style: double;
+	border-width: 10px;
+	border-color: white;
+}
+
+#ul {
+	left: 0;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgb(4, 35, 82);
+	overflow: hidden;
+	height: 7%;
+}
+
+li {
+	display: inline;
+	float: right;
+	margin: 10px;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+	font-family: "Courier New", Monospace;
+	font-weight: bold;
+}
+
+li a:hover {
+  background-color: #021736;
+  border-radius: 15px;
+}
+
+#hone {
+	font-family: "Lucila Console", Monospace;
+	font-size: 60px;
+	padding-left: 80px;
+	color: rgba(251, 253, 255, 0.95);
+}
+label {
+	font-family: "Monaco", Monospace;
+	padding: 20px;
+	font-size: 20px;
+}
+
+form {
+	padding-top: 20px;
+	text-align: center;
+}
+
+br {
+	display: block;
+	margin: 10px 0 0;
+	line-height: 22px;
+}
+
+#btn {
+	padding-top: 15px;
+}
+
+.todo {
+	display: block;
+	color: white;
+	float: left;
+	border: solid;
+	font-family: Monospace;
+	font-size: 15px;
+	padding: 10px 100px;
+	background-color: black;
+}
+
+#lli {
+	float:left;
+	color: white;
+	font-family: "Lucila Console", Monospace;
+	font-size: 17px;
+	padding: 7px;
+}
+
+#hone2 {
+        font-family: "Lucila Console", Monospace;
+        font-size: 60px;
+        padding-left: 50px;
+	padding-top: 30px;
+	text-align: center;
+	color: white;
+}
+
+#new {
+	margin: 10px 50px;
+	display: absolute;
+	text-decoration: None;
+	font-family: Monospace;
+	font-size: 20px;
+	border-style: solid;
+	padding: 10px 25px;
+	color: white;
+	background-color: #0E3166;
+}
+
+#new:hover {
+	background-color: black;
+}
+
+#edit {
+	background-color: #001230;
+}
+
+#edit:hover {
+	background-color: #092652;
+}
+
+hr {
+	display: none;
+}
+
+#logrdiv {
+	text-align: center;
+	padding-top: 130px;
+}
+
+#regbox {
+	position: relative;
+	width: 400px;
+	left: 40%;
+	padding: 35px 10px 25px 10px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 25px;
+	background-color: white;
+	box-shadow: 5px 5px 3px rgba(109, 109, 109, 0.92);
+}
+
+.about {
+	padding: 0px 0px 10px 0px;
+}
+
+h4 {
+	text-align: center;
+	color: white;
+	position: relative;
+	padding-top: 95px;
+	padding-bottom: 25px;
+	padding-left: 95px;
+	font-size: 35px;
+	font-family: Monospace;
+}
+
+#sub {
+	display: inline;
+	padding-left: 15px;
+}
+
+#bsub {
+	padding-top: 15px;
+}
+
+#sublabel {
+	display: inline;
+	padding-right: 7px;
+}
+
+#new {
+	font-size: 20px;
+	font-family: Monospace;
+}

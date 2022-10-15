@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<head>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='style.css') }}">
+</head>
+<div class="logrdiv">
+<h1 class='hone'>{% block title%}Sign Up{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<form method="post">
+	<div class="regbox">
+		<label for="username">Username:</label>
+		<input name="username" id="username" required>
+		<br />
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" required>
+		<br />
+		<div class="btn">
+			<input style="height:35px; width:100px" type="submit" value="Sign Up">
+		</div>
+</form>
+{% endblock %}

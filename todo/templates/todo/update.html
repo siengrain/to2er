@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<head>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='style.css') }}">
+</head>
+	<h4 class="htit">{% block title %}Edit {{ todo['description'] }}{% endblock %}</h4>
+{% endblock %}
+
+{% block content %}
+<div class="regbox">
+	<form method="post">
+		<label for="description">Description</label>
+		<input name="description" class="description" id="description" value="{{ request.form['description'] or todo['description'] }}" required>
+		<br />
+		<label id="com" for="completed">Completed</label>
+		<input type="checkbox" name="completed" id="completed" {% if todo['completed'] == 1 %}checked{% endif %}>
+		<div class="sub">
+			<input type="submit" value="Save">
+		</div>
+	</form>
+	<form action="{{ url_for('todo.delete', id=todo['id']) }}" method="post">
+		<a class="sub action" href="{{ url_for('todo.home') }}">Back</a>
+		<input class="danger" type="submit" value="Delete" onclick="return confirm('Are you sure you want to delete this to-do?')">
+	</form>
+</div>
+{% endblock %}

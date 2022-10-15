@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<head>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='style.css') }}">
+</head>
+<h1 class="hone2">{% block title %}To-Dos{% endblock %}</h1>
+	{% if g.user %}
+		<a class="new" class="action" href="{{ url_for('todo.create') }}">+</a>
+		<br />
+	{% endif %}
+{% endblock %}
+
+{% block content %}
+<ul>
+	{% for todo in todos %}
+	<li class="todo">
+		<div>
+			<h2 id='todos'>
+				{% if todo['completed'] == 1 %}
+				<strike>{{ todo['description'] }}</strike>
+				{% else %}
+				{{ todo['description'] }}
+				{% endif %}
+			</h2>
+			<div class="about">{{ todo['created_at'].strftime('%Y-%m-%d') }}</div>
+			<a class="edit action" href="{{ url_for('todo.update', id=todo['id']) }}">Edit</a>
+		</div>
+	</li>
+	{% if not loop.last %}
+		<hr>
+	{% endif %}
+	{% endfor %}
+</ul>
+{% endblock %}

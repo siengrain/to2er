@@ -1,0 +1,294 @@
+body {
+	background-color: rgba(4, 27, 65, 1);
+}
+
+.ul {    
+	left: 0;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgb(4, 35, 82);
+        overflow: hidden;
+        height: 8%;
+}
+
+li {
+	display: inline;
+        float: right;
+        margin: 10px;
+}
+
+li a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        font-family: "Courier New", Monospace;
+        font-weight: bold;
+}
+
+li a:hover {
+	background-color: #021736;
+        border-radius: 15px;
+}
+
+.indtex {
+        font-size: 50px;
+        align-text: center;
+        color: rgba(251, 253, 255, 0.95);
+}
+
+.subtex {
+        font-size: 18px;
+        color: rgba(224, 230, 239, 0.79);
+}
+
+.contentArea {
+        position: absolute;
+        top: 30%;
+	position: center;
+	text-align: center;
+}
+
+.border {
+        border-style: double;
+        border-width: 7px;
+        border-color: white;
+	margin-right: 5px;
+}
+
+.maintext {
+        font-family: "Lucida Console", monospace;
+        color: white;
+	padding-top: 5px;
+}
+
+.logrdiv {
+        text-align: center;
+        padding-top: 130px;
+}
+
+.hone {
+        font-family: "Lucila Console", Monospace;
+        font-size: 40px;
+        color: rgba(251, 253, 255, 0.95);
+}
+label {
+        font-family: "Monaco", Monospace;
+        padding: 20px;
+        font-size: 20px;
+}
+
+form {
+        padding-top: 20px;
+        text-align: center;
+}
+
+br {
+        display: block;
+        margin: 10px 0 0;
+        line-height: 22px;
+}
+.regbox {
+        position: center;
+	width: 98%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 5px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 25px;
+        background-color: white;
+        box-shadow: 3px 3px 1px rgba(109, 109, 109, 0.92);
+}
+
+.todo {
+        display: block;
+        color: white;
+        float: center;
+        border: solid;
+	margin: 17px;
+	text-align: center;
+        font-family: Monospace;
+        font-size: 15px;
+        background-color: black;
+	width: 98%;
+}
+
+.lli {
+        float:left;
+        color: white;
+        font-family: "Lucila Console", Monospace;
+        font-size: 17px;
+        padding: 7px;
+}
+
+.hone2 {
+        font-family: "Lucila Console", Monospace;
+        font-size: 60px;
+        padding-left: 50px;
+        padding-top: 30px;
+        text-align: center;
+        color: white;
+}
+
+.new {
+        margin: 10px 40%;
+	display: absolute;
+        text-decoration: None;
+        font-family: Monospace;
+        font-size: 20px;
+        border-style: solid;
+        padding: 10px 25px;
+        color: white;
+        background-color: #0E3166;
+}
+
+.sub {
+        display: inline;
+        padding-left: 15px;
+	padding-right: 10px;
+}
+
+.sublabel {
+        display: inline;
+	padding: 5px;
+	padding-bottom: 10px;
+}
+
+.htit {
+        text-align: center;
+        color: white;
+        position: relative;
+        padding-top: 95px;
+        padding-bottom: 25px;
+        font-size: 35px;
+        font-family: Monospace;
+}
+
+hr {
+        display: none;
+}
+
+.description {
+	margin: 10px;
+}
+@media only screen and (min-width: 768px)
+{
+	.ul {
+		height: 8%;
+	}
+	.maintext {
+		padding-left: 50px;
+		padding-right: 50px;
+		align-text: center;
+	}
+	
+	.indtex {
+		font-size: 100px;
+	}
+	
+	.subtex {
+		font-size: 25px;
+	}	
+	
+	.contentArea {
+		position: absolute;
+		top: 27%;
+		left: 30%;
+	}
+	
+	.border {
+		border-width: 10px;
+	}
+	
+	.hone {
+		font-size: 60px;
+	}
+	
+	.btn {
+		padding-top: 15px;
+	}
+	
+	.todo {
+		float: left;
+		font-size: 15px;
+		padding: 10px 100px;
+		display: block;
+        	text-align: center;
+        	width: 25%;
+	}
+	
+	.lli {
+		float:left;
+		color: white;
+		font-family: "Lucila Console", Monospace;
+		font-size: 17px;
+		padding: 7px;
+	}
+	
+	.hone2 {
+	        font-family: "Lucila Console", Monospace;
+	        font-size: 60px;
+	        padding-left: 50px;
+		padding-top: 30px;
+		text-align: center;
+		color: white;
+	}
+	
+	.new {
+		margin: 10px 3.7%;
+	}
+	
+	.new:hover {
+		background-color: black;
+	}
+	
+	.edit {
+		background-color: #001230;
+	}
+	
+	.edit:hover {
+		background-color: #092652;
+	}
+	
+	hr {
+		display: none;
+	}
+	
+	.logrdiv {
+		text-align: center;
+		padding-top: 130px;
+	}
+	
+	.regbox {
+		position: relative;
+		width: 25%;
+		left: 37%;
+		padding: 35px 10px 25px 10px;
+		box-shadow: 5px 5px 3px rgba(109, 109, 109, 0.92);
+	}
+	
+	.about {
+		padding: 0px 0px 10px 0px;
+	}
+	
+	.sub {
+		padding-left: 15px;
+		padding-top: 20px;
+	}
+	
+	.sublabel {
+		padding-right: 7px;
+	}
+	.re2{
+		margin-top: 0%;
+	}
+	.description {
+		margin: 0px;
+	}
+}
